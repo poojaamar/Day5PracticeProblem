@@ -1,10 +1,8 @@
-﻿Console.WriteLine("Enter the year: ");
-int year = int.Parse(Console.ReadLine());
-if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+﻿Console.WriteLine("Enter the value of N: ");
+int n = int.Parse(Console.ReadLine());
+double harmonicNo = 0.0;
+for (double i = 1; i <= n; i++)
 {
-    Console.WriteLine(year + " is a Leap Year");
+    harmonicNo = harmonicNo + (1 / i);
 }
-else
-{
-    Console.WriteLine(year + " is not a Leap Year");
-}
+Console.WriteLine("Harmonic value of " + n + " is : " + harmonicNo);
