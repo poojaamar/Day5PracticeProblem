@@ -1,8 +1,10 @@
-﻿Console.WriteLine("Enter the Dividend && Divisor ");
-int dividend = int.Parse(Console.ReadLine());
-int divisor = int.Parse(Console.ReadLine());
-int remainder;
-double quotient;
-quotient = dividend / divisor;
-remainder = dividend % divisor;
-Console.WriteLine("Remainder: " + remainder +  " Quotient: " + quotient);
+﻿  int num1 = 15;
+  int num2 = 30; 
+  int num3;
+Console.WriteLine("Before Swapping:");
+Console.WriteLine("Num 1: " + num1 + " Num 2: " + num2);
+num3 = num1;
+num1 = num2;
+num2 = num3;
+Console.WriteLine("After Swapping:");
+Console.WriteLine("Num 1: " + num1 + " Num 2: " + num2);
