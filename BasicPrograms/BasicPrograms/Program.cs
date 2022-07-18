@@ -1,11 +1,16 @@
-﻿char ah;
-Console.WriteLine("Enter the letter:");
-ah = Char.Parse(Console.ReadLine());
-if ((ah == 'a') || (ah == 'e') || (ah == 'i') || (ah == 'o') || (ah == 'u') || (ah == 'A') || (ah == 'E') || (ah == 'I') || (ah == 'O') || (ah == 'U'))
+﻿Console.WriteLine("Enter 3 numbers:");
+int num1 = int.Parse(Console.ReadLine());
+int num2 = int.Parse(Console.ReadLine());
+int num3 = int.Parse(Console.ReadLine());
+if ((num1 > num2) && (num1 > num3))
 {
-    Console.WriteLine(ah + " is a Vowel.");
+    Console.WriteLine("Number 1 is greater number.");
+}
+else if ((num2 > num3) && (num2 > num3))
+{
+    Console.WriteLine("Number 2 is greater number.");
 }
 else
 {
-    Console.WriteLine(ah + " is a Consonant.");
+    Console.WriteLine("Number 3 is greater number.");
 }
