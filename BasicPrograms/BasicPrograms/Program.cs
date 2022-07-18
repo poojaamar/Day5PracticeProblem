@@ -1,10 +1,6 @@
-﻿Console.WriteLine("Enter a Number:");
-int num = int.Parse(Console.ReadLine());
-if (num % 2 == 0)
+﻿String num = args[0];
+int n = int.Parse(num);
+for (int i = 1; i <= n; i++)
 {
-    Console.WriteLine("Number is Even");
-}
-else
-{
-    Console.WriteLine("Number is Odd");
+    Console.WriteLine(Math.Pow(2, i));
 }
